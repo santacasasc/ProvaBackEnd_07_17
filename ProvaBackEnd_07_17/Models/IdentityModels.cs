@@ -29,5 +29,13 @@ namespace ProvaBackEnd_07_17.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProvaBackEnd_07_17.Models.Noticias.Noticia> Noticias { get; set; }
+
+        public System.Data.Entity.DbSet<ProvaBackEnd_07_17.Models.Noticias.Categoria> Categorias { get; set; }
+
+        public System.Data.Entity.DbSet<ProvaBackEnd_07_17.Models.Noticias.NoticiaItem> NoticiaItens { get; set; }
+
+        public System.Data.Entity.DbSet<ProvaBackEnd_07_17.Models.Noticias.Tipo> Tipos { get; set; }
     }
 }
